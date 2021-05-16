@@ -41,9 +41,15 @@ body{
 }
 .panel.active{
    width: 25rem;
-
 }
-
 .panel.active h3{
     opacity: 1;
+}
+
+/* media queries: if the screen on the smaller side, don't display the last two cards */
+@media screen and (max-width: 600px){
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
 }
